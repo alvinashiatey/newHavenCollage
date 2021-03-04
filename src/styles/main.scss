@@ -1,0 +1,46 @@
+@import "./reset/reset.scss";
+@import "./components/variables.scss";
+@import "./components/home.scss";
+
+@font-face {
+  font-family: "Gerstner Programm";
+  src: url("../assets/font/Gerstner\ Programm\ Regular.otf") format("pentype");
+}
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap");
+
+body {
+  color: $color-primary;
+  font-size: 62.5%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "EB Garamond", serif;
+  font-variant-numeric: oldstyle-nums;
+  // overflow: hidden;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  // background: linear-gradient($color-secondary 70%, $color-tertiary);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #fefefe;
+  display: inline-block;
+  transition: all 200ms ease-in;
+}
+
+a:hover {
+  transform: skewX(20deg);
+}
